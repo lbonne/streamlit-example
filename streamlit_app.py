@@ -20,6 +20,7 @@ with st.sidebar:
     add_radio = st.radio(
         "Choose a shipping method",
         ("Standard (5-15 days)", "Express (2-5 days)")
+    add_button = st.button("Lets go!"à    
     )
     
 with st.echo(code_location='below'):
