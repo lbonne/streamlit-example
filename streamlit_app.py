@@ -15,6 +15,8 @@ forums](https://discuss.streamlit.io).
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
 add_button = st.button("Lets go!")
+d = st.date_input("When's your birthday", datetime.date(2019, 7, 6))
+st.write('Your birthday is:', d)
 
 
 # Using "with" notation
