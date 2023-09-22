@@ -14,15 +14,14 @@ forums](https://discuss.streamlit.io).
 
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
- add_button = st.button("Lets go!")
+add_button = st.button("Lets go!")
 
 
 # Using "with" notation
 with st.sidebar:
     add_radio = st.radio(
         "Choose a shipping method",
-        ("Standard (5-15 days)", "Express (2-5 days)")
-       
+        ("Standard (5-15 days)", "Express (2-5 days)")       
     )
     
 with st.echo(code_location='below'):
