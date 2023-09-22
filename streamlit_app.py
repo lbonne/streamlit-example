@@ -19,6 +19,11 @@ add_button = st.button("Lets go!")
 d = st.date_input("When's your birthday", datetime.date(2019, 7, 6))
 st.write('Your birthday is:', d)
 
+st.button("Reset", type="primary")
+if st.button('Say hello'):
+    st.write('Why hello there')
+else:
+    st.write('Goodbye')
 
 # Using "with" notation
 with st.sidebar:
