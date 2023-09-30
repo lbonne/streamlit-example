@@ -19,13 +19,13 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 st.write("Yowkes!!!")
 mylist = st.secrets.YF.ThickerList
-st.write(mylist[0])
-symbol1 = yf.Ticker(mylist[0])
+--st.write(mylist[0])
+--symbol1 = yf.Ticker(mylist[0])
 --st.write(symbol1.info)
 
 option = st.selectbox(
     'Select your thicker: ',
-    (mylist)
+    (mylist))
 myticker = yf.Ticker(option)
 st.write("Info :")
 st.write(myticker.info)    
