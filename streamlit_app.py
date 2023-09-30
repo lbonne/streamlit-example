@@ -27,7 +27,7 @@ option = st.selectbox(
     'Select your thicker: ',
     (mylist))
 myticker = yf.Ticker(option)
-st.write("Info :", myticker.info['longName']
+st.write("Info :", myticker.info['longName'])
 st.write(myticker.info)    
 
 
