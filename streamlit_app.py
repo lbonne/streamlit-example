@@ -28,7 +28,8 @@ option = st.selectbox(
     (mylist))
 myticker = yf.Ticker(option)
 st.write("Info :", myticker.info['longName'])
-st.write(myticker.info)    
+with st.expander("Setails..."):
+    st.write(myticker.info)    
 
 
 with st.sidebar:
