@@ -26,9 +26,9 @@ symbol1 = yf.Ticker(mylist[0])
 option = st.selectbox(
     'Select your thicker: ',
     (mylist)
-thicker = yf.Ticker(option)
+myticker = yf.Ticker(option)
 st.write("Info :")
-st.write(option.info)    
+st.write(myticker.info)    
 
 
 with st.sidebar:
