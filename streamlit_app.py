@@ -17,8 +17,8 @@ In the meantime, below is an example of what you can do with just a few lines of
 """
 
 st.write("Yowkes!!!")
-thickerlist = st.secrets.YF.ThickerList
---st.write(st.secrets.YF.ThickerList)
+mylist = st.secrets.YF.ThickerList
+st.write(myslist[0])
 
 
 
