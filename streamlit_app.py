@@ -21,10 +21,14 @@ st.write("Yowkes!!!")
 mylist = st.secrets.YF.ThickerList
 st.write(mylist[0])
 symbol1 = yf.Ticker(mylist[0])
-st.write(symbol1.info)
+--st.write(symbol1.info)
 
-
-
+option = st.selectbox(
+    'Select your thicker: ',
+    (mylist)
+thicker = yf.Ticker(option)
+st.write("Info :")
+st.write(option.info)    
 
 
 with st.sidebar:
