@@ -28,12 +28,13 @@ option = st.selectbox(
     (mylist))
 myticker = yf.Ticker(option)
 st.write("Info :", myticker.info['longName'], myticker.isin)
-hist = myticker.history(period="1mo")
+hist = myticker.history(period="8d")
 st.write(hist)
+
+
 
 with st.expander("Details..."):
     st.write(myticker.info)    
-
 
 with st.sidebar:
     add_radio = st.radio(
